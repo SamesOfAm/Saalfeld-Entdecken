@@ -1,0 +1,49 @@
+@import 'variables';
+
+cms-cookie-bar > cms-container form cms-buttons cms-button[value="accept"]:nth-last-of-type(1) > span, cms-accept-tags > cms-container form cms-buttons cms-button[value="accept"]:nth-last-of-type(1) > span {
+  @include orange-button;
+  background: $orange !important;
+  transition: filter 250ms;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+cms-cookie-bar > cms-container form cms-buttons cms-button[value="accept"]:nth-last-of-type(1) > span::before, cms-accept-tags > cms-container form cms-buttons cms-button[value="accept"]:nth-last-of-type(1) > span::before {
+  background: url("../layout/arrow-right-white1.svg") 0/contain !important;
+  top: 7px;
+}
+
+cms-cookie-bar, cms-accept-tags {
+  --btn-accept-bg-color: #81CE65;
+}
+
+.ce_optin_fallback {
+  position: relative;
+  height: 230px;
+  margin: 20px 0 0;
+  .opt-in-placeholder-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: .5;
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  p {
+    position: relative;
+    z-index: 10;
+    background: rgba(255,255,255,.4);
+    padding: 20px;
+    text-align: center;
+    a {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<div class="info-with-overview-map">
+    <!-- indexer::stop -->
+    <script>function loadTabControl_39(){window.TC_39=new Array();i=0;$$('#tabcontrol_39').each(function(s){i++;elements=s.getElements('.tabs');if(elements.length){var tcControl=new TabControl(s,{tab_remember:0,tab_cookiename:'',tab_control:'tabcontrol_39',behaviour:'click',tabs:s.getElements('.tabs'),panes:s.getElements('.panes'),selectedClass:'selected',hoverClass:'hover'});window.addEvent("hashchange",function(){tcControl.onTabHashChange()});window.TC_39[i]=tcControl}})}(function($){window.addEvent('domready',loadTabControl_39)})(document.id)</script>
+    <!-- indexer::continue -->
+    <div id="tabcontrol_39" class="ce_tabcontrol block">
+        <div class="tabcontrol_tabs block">
+            <ul>
+                <li class="tabs tab_0 selected" id="39_0">Karte &amp; Stationen</li>
+                <li class="tabs tab_1" id="39_1">Infos zur Tour</li>
+            </ul>
+        </div>
+        <div class="tabcontrol_panes block">
+            <div class="ce_tabcontrol_pane pane_1 block" id="pane_40_1">
+                <div class="panes" style="display: block;">
+                    <div id="overview-map"></div>
+                </div>
+            </div>
+            <div class="ce_tabcontrol_pane pane_2 block" id="pane_43_2">
+                <div class="panes" style="display: none;">
+                    <div>
+                        <div class="ce_text block">
+                            <p><?= $this->infos ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  const stations = <?= json_encode($this->stations) ?>;
+  const polygonArray = [];
+  stations.forEach(station => {
+    const coordArray = [parseFloat(station.latCoords),parseFloat(station.lngCoords)];
+    polygonArray.push(coordArray);
+  })
+  const map = L.map('overview-map').setView(polygonArray[0], 14);
+  L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/clr6f2hvo01gk01o9f3pmcf52/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+    // attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 22,
+    accessToken: 'pk.eyJ1IjoiZmxvcmlhbnRlcGVsbWFubiIsImEiOiJjbHI2ZGwxb3UwZjA2MmlwNDRic3E2NG0wIn0.zTqCT0gMGbLpRV0wnMXeXw'
+  }).addTo(map);
+  /*const polygon = L.polygon(polygonArray, {
+    color: '#C6351E',
+    fillColor: '#fff'
+  }).addTo(map);*/
+  polygonArray.forEach(function(coord, index) {
+    let station;
+    if(index === 0) {
+      console.log('First');
+      station = L.circle(coord, {
+        color: '#C6351E',
+        fillColor: '#F29300',
+        radius: 45
+      }).addTo(map);
+    } else {
+      console.log(index);
+      station = L.circle(coord, {
+        color: '#d7a03d',
+        fillColor: '#F29300',
+        radius: 45
+      }).addTo(map);
+    }
+    station.bindPopup('<strong>' + stations[index].name + '</strong><br>' + stations[index].description);
+  })
+</script>
+
+
+
+
+
+

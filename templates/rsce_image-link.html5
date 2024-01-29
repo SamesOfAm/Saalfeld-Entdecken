@@ -1,0 +1,18 @@
+<div class="image-link <?= $this->color ?>">
+  <div class="image-link-left">
+    <div class="image-link-image">
+      <img src="{{file::<?= $this->image ?>}}">
+    </div>
+  </div>
+  <div class="image-link-right">
+      <div class="image-link-headline">
+          <h4><?= $this->headline ?></h4>
+      </div>
+    <div class="image-link-description">
+      <?= $this->description ?>
+    </div>
+    <div class="image-link-button">
+        <a href="<?= $this->url ?>"><?= $this->buttonText ?></a>
+    </div>
+  </div>
+</div>

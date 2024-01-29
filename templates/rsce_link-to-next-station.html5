@@ -1,0 +1,3 @@
+<div class="link-to-next-station">
+  <a href="<?= $this->link ?>">Nächste Station aufrufen</a>
+</div>

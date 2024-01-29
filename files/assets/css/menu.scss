@@ -1,0 +1,44 @@
+@import 'variables';
+
+.mobile_menu {
+  .inner {
+    background: transparent linear-gradient(180deg, #C6351E 0%, #F29300 100%) 0% 0% no-repeat padding-box;
+    .menu-body {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        li {
+          padding-bottom: 10px;
+          display: block;
+          width: 80%;
+          margin: 20px auto;
+          &:not(:last-child) {
+            border-bottom: 1px solid;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          .menu-list-icon {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            img {
+              height: 35px;
+              filter: brightness(0) invert(1);
+            }
+          }
+          span {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+

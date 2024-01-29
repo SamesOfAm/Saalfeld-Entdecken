@@ -1,0 +1,21 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mettars', sans-serif;
+    src: url('../fonts/mettars-webfont.woff2') format('woff2'),
+    url('../fonts/mettars-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Mettars', sans-serif;
+}

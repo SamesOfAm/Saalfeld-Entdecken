@@ -1,0 +1,53 @@
+@import 'variables';
+
+.mod_search {
+  width: 90%;
+  margin: 40px auto;
+  form {
+    background: gray;
+    box-sizing: border-box;
+    padding: 18px;
+    .formbody {
+      position: relative;
+    }
+    .widget-submit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      input {
+        font-size: 10px;
+        width: 20px;
+        height: 16px;
+      }
+    }
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+  }
+  .info {
+    display: none;
+  }
+  > div {
+    background: $orange;
+    color: white;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin: 15px 0;
+    .highlight {
+      background: $red;
+      color: white;
+    }
+    .url {
+      display: none;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

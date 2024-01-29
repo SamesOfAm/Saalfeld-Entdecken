@@ -1,0 +1,14 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+    <div class="opt-in-placeholder-background">
+        <img src="files/assets/layout/google-map.jpg">
+    </div>
+    <?php if( strlen($this->fallback_text) ): ?>
+        <?= $this->fallback_text; ?>
+    <?php else: ?>
+        <p>Dieser Inhalt eines Drittanbieters wird aufgrund Ihrer fehlenden Zustimmung zu Drittanbieter-Inhalten nicht angezeigt.</p>
+        <p><a href="{{cms_optinlink}}" style="font-weight:bold;" rel="nofollow">Klicken Sie hier um Ihre Einstellungen zu bearbeiten.</a></p>
+    <?php endif; ?>
+
+<?php $this->endblock(); ?>

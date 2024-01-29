@@ -1,0 +1,34 @@
+<div class="station-header">
+    <?php if($this->image): ?>
+        <div class="station-header-image">
+            <img class="<?php if($this->focus === 'Oben'): ?>focus-top<?php elseif($this->focus === 'Unten'): ?>focus-bottom<?php endif; ?>" src="{{file::<?= $this->image ?>}}">
+        </div>
+    <?php endif; ?>
+    <div class="station-header-headline">
+        <h3>Mobile Entdeckungstouren</h3>
+        <h1><?= $this->headline ?></h1>
+    </div>
+    <div class="station-short-info">
+        <div class="station-short-info-top">
+            <ul>
+                <li><?= $this->noStations ?> Stationen</li>
+                <li><?= $this->distance ?> km</li>
+                <li><?= $this->time ?> Stunden</li>
+            </ul>
+        </div>
+        <?php if($this->parentPage || $this->nextStation): ?>
+            <div class="station-short-info-bottom">
+                <?php if($this->parentPage): ?>
+                    <a href="<?= $this->parentPage ?>" class="all-stations-button">
+                        Alle Stationen
+                    </a>
+                <?php endif; ?>
+                <?php if($this->nextStation): ?>
+                    <a href="<?= $this->nextStation ?>" class="next-station-button">
+                        Nächste Station
+                    </a>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>

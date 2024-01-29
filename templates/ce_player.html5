@@ -1,0 +1,63 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <figure class="<?= $this->containerClass ?>">
+
+    <?php if ($this->caption): ?>
+        <figcaption class="caption"><?= $this->caption ?></figcaption>
+    <?php endif; ?>
+
+    <?php if ($this->isVideo): ?>
+      <div class="media-player">
+          <div class="media-player-station-name">
+
+          </div>
+          <div class="progress-bar">
+
+          </div>
+          <div class="media-player-controls">
+              <div class="media-player-previous">
+                  <img src="">
+              </div>
+              <div class="media-player-play">
+
+              </div>
+              <div class="media-player-next">
+
+              </div>
+          </div>
+      </div>
+      </video>
+      <video<?= $this->size ?><?php if ($this->poster): ?> poster="<?= $this->poster ?>"<?php endif; ?><?php if ($this->preload): ?> preload="<?= $this->preload ?>"<?php endif; ?> <?= implode(' ', $this->attributes) ?>>
+        <?php foreach ($this->files as $file): ?>
+          <source type="<?= $file->mime ?>" src="<?= $file->path.$this->range ?>">
+        <?php endforeach; ?>
+
+    <?php else: ?>
+        <div class="media-player">
+            <div class="media-player-station-name">
+
+            </div>
+            <div class="progress-bar">
+                <progress id="seekbar" value="0" max="1"></progress>
+                <div class="start-time">00:00</div>
+                <div class="end-time"></div>
+            </div>
+            <div class="media-player-controls">
+                <div class="media-player-previous">
+                    <img src="files/assets/layout/previous.svg">
+                </div>
+                <div class="media-player-play">
+                </div>
+            </div>
+        </div>
+      <audio<?php if ($this->preload): ?> preload="metadata"<?php endif; ?> <?= implode(' ', $this->attributes) ?>>
+        <?php foreach ($this->files as $file): ?>
+          <source type="<?= $file->mime ?>" src="<?= $file->path ?>">
+        <?php endforeach; ?>
+      </audio>
+    <?php endif; ?>
+  </figure>
+
+<?php $this->endblock(); ?>
