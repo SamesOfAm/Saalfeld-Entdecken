@@ -24,7 +24,7 @@
 
 #main .mod_article {
   .ce_text {
-    h2 {
+    h2,h3,h4,h5 {
       width: 90%;
       max-width: 800px;
       margin-left: auto;
@@ -79,6 +79,19 @@
   z-index: 10;
   + div {
     @include after-figcaption;
+  }
+}
+
+.to-top-button {
+  position: fixed;
+  bottom: 4vw;
+  right: 4vw;
+  z-index: 100;
+  width: 70px;
+  transition: transform 250ms;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 

@@ -38,15 +38,19 @@
       ul {
         display: flex;
         justify-content: space-between;
-        width: 295px;
+        width: 90%;
         margin: 15px auto;
         list-style: none;
         padding: 0;
         li {
           text-transform: uppercase;
+          width: 50%;
+          text-align: center;
           &:not(:last-child) {
-            padding-right: 12px;
             border-right: 1px solid;
+          }
+          &:first-child:last-child {
+            width: 100%;
           }
         }
       }
@@ -159,9 +163,16 @@
   }
 }
 
+.ce_download {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .tour-map {
   max-width: 800px;
   margin: 40px auto 0;
+  margin-bottom: 0 !important;
   padding-top: 1px;
   padding-bottom: 10px;
   background: $gray;

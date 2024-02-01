@@ -31,7 +31,7 @@
             </a>
         </li> -->
         <li>
-            <a href="">
+            <a href="{{link_url::15}}">
                 <div class="menu-list-icon"><img src="files/assets/layout/learn.svg"></div>
                 <span>Veranstaltungstipps</span>
             </a>
@@ -43,7 +43,7 @@
             </a>
         </li> -->
         <li>
-            <a href="">
+            <a href="{{link_url::2}}">
                 <div class="menu-list-icon"><img src="files/assets/layout/tours.svg"></div>
                 <span>Mobile Entdeckungstouren</span>
             </a>

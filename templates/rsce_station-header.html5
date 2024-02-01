@@ -11,9 +11,9 @@
     <div class="station-short-info">
         <div class="station-short-info-top">
             <ul>
-                <li><?= $this->noStations ?> Stationen</li>
-                <li><?= $this->distance ?> km</li>
-                <li><?= $this->time ?> Stunden</li>
+                <?php if($this->noStations): ?><li><?= $this->noStations ?> Stationen</li><?php endif; ?>
+                <?php if($this->distance): ?><li>ca. <?= $this->distance ?> km</li><?php endif; ?>
+                <?php if($this->time): ?><li>ca. <?= $this->time ?> Stunde<?php if( floatval(str_replace(',','.', $this->time)) > '1'): ?>n<?php endif; ?></li></ul<?php endif; ?>
             </ul>
         </div>
         <?php if($this->parentPage || $this->nextStation): ?>

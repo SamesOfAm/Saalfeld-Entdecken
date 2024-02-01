@@ -22,6 +22,8 @@ cms-cookie-bar, cms-accept-tags {
   position: relative;
   height: 230px;
   margin: 20px 0 0;
+  margin-bottom: 0 !important;
+  z-index: 0 !important;
   .opt-in-placeholder-background {
     position: absolute;
     top: 0;
@@ -43,7 +45,9 @@ cms-cookie-bar, cms-accept-tags {
     padding: 20px;
     text-align: center;
     a {
-      color: black;
+      color: #6b1105;
+      text-decoration: none;
+      text-transform: uppercase;
     }
   }
 }

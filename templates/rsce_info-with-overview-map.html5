@@ -34,7 +34,7 @@
     const coordArray = [parseFloat(station.latCoords),parseFloat(station.lngCoords)];
     polygonArray.push(coordArray);
   })
-  const map = L.map('overview-map').setView(polygonArray[0], 14);
+  const map = L.map('overview-map').setView(polygonArray[0], 15);
   L.tileLayer('https://api.mapbox.com/styles/v1/floriantepelmann/clr6f2hvo01gk01o9f3pmcf52/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
     // attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 22,
@@ -51,14 +51,14 @@
       station = L.circle(coord, {
         color: '#C6351E',
         fillColor: '#F29300',
-        radius: 45
+        radius: 25
       }).addTo(map);
     } else {
       console.log(index);
       station = L.circle(coord, {
         color: '#d7a03d',
         fillColor: '#F29300',
-        radius: 45
+        radius: 25
       }).addTo(map);
     }
     station.bindPopup('<strong>' + stations[index].name + '</strong><br>' + stations[index].description);
