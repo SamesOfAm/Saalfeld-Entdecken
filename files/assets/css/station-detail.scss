@@ -167,6 +167,22 @@
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
+  a {
+    position: relative;
+    color: orange;
+    text-decoration: none;
+    padding-left: 30px;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 100%;
+      background: url("../layout/download.svg") no-repeat 0/contain;
+    }
+  }
 }
 
 .tour-map {

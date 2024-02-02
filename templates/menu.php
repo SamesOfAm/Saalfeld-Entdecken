@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="header-bottom">
-            {{insert_content::4}}
+            {{insert_module::7}}
         </div>
     </div>
 </div>
