@@ -51,14 +51,14 @@
       station = L.circle(coord, {
         color: '#C6351E',
         fillColor: '#F29300',
-        radius: 25
+        radius: 15
       }).addTo(map);
     } else {
       console.log(index);
       station = L.circle(coord, {
         color: '#d7a03d',
         fillColor: '#F29300',
-        radius: 25
+        radius: 15
       }).addTo(map);
     }
     station.bindPopup('<strong>' + stations[index].name + '</strong><br>' + stations[index].description);
