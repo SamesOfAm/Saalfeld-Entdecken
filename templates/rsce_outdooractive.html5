@@ -1,0 +1,5 @@
+<div class="outdooractive">
+    <h4><?= $this->headline ?></h4>
+    <?php if($this->subheadline): ?><p><?= $this->subheadline ?></p><?php endif; ?>
+    <iframe id="oaListIframe<?= $this->id ?>" src="https://www.outdooractive.com/de/route/<?= $this->id ?>/embed.html?flexView=true" frameborder="0" style="display: block; width: 100%; height: 472px;"></iframe>
+</div>
