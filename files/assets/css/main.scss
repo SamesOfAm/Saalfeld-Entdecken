@@ -42,8 +42,20 @@
       }
     }
   }
+  &:not(.title-image) > .ce_image {
+    margin-bottom: 40px;
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
   &:not(:first-child) {
     margin: 20px 0;
+  }
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+    > *:last-child:not(.link-to-next-station) {
+      margin-bottom: 80px;
+    }
   }
   &.title-image {
     margin-top: 0;

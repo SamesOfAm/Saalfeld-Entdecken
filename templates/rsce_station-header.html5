@@ -9,6 +9,9 @@
         <h1><?= $this->headline ?></h1>
     </div>
     <div class="station-short-info">
+        <?php if($this->idOfFirstHeader): ?>
+            {{insert_content::<?= $this->idOfFirstHeader ?>}}
+        <?php else: ?>
         <div class="station-short-info-top">
             <ul>
                 <?php if($this->noStations): ?><li><?= $this->noStations ?> Stationen</li><?php endif; ?>
@@ -16,6 +19,7 @@
                 <?php if($this->time): ?><li>ca. <?= $this->time ?> Stunde<?php if( floatval(str_replace(',','.', $this->time)) > '1'): ?>n<?php endif; ?></li></ul<?php endif; ?>
             </ul>
         </div>
+        <?php endif; ?>
         <?php if($this->parentPage || $this->nextStation): ?>
             <div class="station-short-info-bottom">
                 <?php if($this->parentPage): ?>

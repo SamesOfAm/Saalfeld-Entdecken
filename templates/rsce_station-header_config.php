@@ -39,6 +39,10 @@ return array(
       'inputType' => 'url',
       'label' => array('Hauptseite des Rundgangs', '')
     ),
+    'idOfFirstHeader' => array(
+      'inputType' => 'text',
+      'label' => array('ID der ersten Kopfzeile', 'zum automatischen Ausfüllen von Anzahl Stationen, Entfernung und Dauer')
+    ),
     'nextStation' => array(
       'inputType' => 'url',
       'label' => array('Nächste Stationsseite', '')

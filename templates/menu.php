@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="header-bottom">
-            {{insert_module::7}}
+            {{insert_module::7}} <!-- Module: Header Quick Navigation -->
         </div>
     </div>
 </div>
@@ -31,9 +31,21 @@
             </a>
         </li> -->
         <li>
+            <a href="{{link_url::57}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/baeume.svg"></div>
+                <span>Aktiv in Saalfeld</span>
+            </a>
+        </li>
+        <li>
             <a href="{{link_url::15}}">
                 <div class="menu-list-icon"><img src="files/assets/layout/learn.svg"></div>
                 <span>Veranstaltungstipps</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{link_url::29}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/schild.svg"></div>
+                <span>Sehen und erleben</span>
             </a>
         </li>
         <!-- <li>
