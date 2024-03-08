@@ -1,5 +1,5 @@
 <div class="stations-list">
-  <h3>Übersicht: Alle Stationen</h3>
+    <?php if(!$this->toggleHeadline): ?><h3>Übersicht: Alle Stationen</h3><?php endif; ?>
     <ul>
         <?php foreach($this->stations as $station): ?>
             <li>
@@ -10,7 +10,7 @@
                             <h4><?= $station->name ?></h4>
                             <p><?= $station->description ?></p>
                         </div>
-                        <div class="stations-list-link-button">Zur Station</div>
+                        <div class="stations-list-link-button"><?php if($station->buttontext): ?><?= $station->buttontext; ?><?php else: ?>Zur Station<?php endif; ?></div>
                     </div>
                 </a>
             </li>

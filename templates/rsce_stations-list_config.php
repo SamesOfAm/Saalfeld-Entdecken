@@ -9,6 +9,10 @@ return array(
     'type' => 'none',
   ),
   'fields' => array(
+    'toggleHeadline' => array(
+      'inputType' => 'checkbox',
+      'label' => array('Überschrift ausblenden', 'Soll die Überschrift ("Übersicht: Alle Stationen") ausgeblendet werden?')
+    ),
     'stations' => array(
       'inputType' => 'list',
       'label' => array('Stationen eintragen', 'Rechts auf "Neues Element" klicken'),
@@ -20,6 +24,10 @@ return array(
         'description' => array(
           'inputType' => 'text',
           'label' => array('Kurzbeschreibung', 'Ein ganz kurzer Satz über deíese Station')
+        ),
+        'buttontext' => array(
+          'inputType' => 'text',
+          'label' => array('Button-Text', 'Was soll auf dem Button stehen?')
         ),
         'link' => array(
           'inputType' => 'url',

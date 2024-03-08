@@ -1,5 +1,7 @@
 <div class="outdooractive">
     <h4><?= $this->headline ?></h4>
     <?php if($this->subheadline): ?><p><?= $this->subheadline ?></p><?php endif; ?>
-    <iframe id="oaListIframe<?= $this->id ?>" src="https://www.outdooractive.com/de/route/<?= $this->id ?>/embed.html?flexView=true" frameborder="0" style="display: block; width: 100%; height: 472px;"></iframe>
+    <script type="text/javascript" src="https://www.outdooractive.com/de/embed/<?= $this->id ?>/js?mw=false&usr=ebqwm&key=USR-KLWGO3Z9-EMWGMZ3P-4OSSRFUJ"></script>
+    <!-- <iframe id="oaListIframe<?= $this->id ?>" src="https://www.outdooractive.com/de/embed/<?= $this->id ?>/js?mw=true" frameborder="0" style="display: block; width: 100%; height: 472px;"></iframe> -->
 </div>
+

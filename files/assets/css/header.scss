@@ -157,16 +157,16 @@
               filter: brightness(0) invert(1);
             }
             &:first-child a:before,&:first-child strong:before {
-              background-image: url('../layout/baeume.svg');
+              background-image: url('../layout/schild.svg');
             }
             &:nth-child(2) a:before,&:nth-child(2) strong:before {
               background-image: url('../layout/kompass.svg');
             }
             &:nth-child(3) a:before,&:nth-child(3) strong:before {
-              background-image: url('../layout/schild.svg');
+              background-image: url('../layout/buch.svg');
             }
             &:nth-child(4) a:before,&:nth-child(4) strong:before {
-              background-image: url('../layout/buch.svg');
+              background-image: url('../layout/baeume.svg');
             }
             img {
               height: 35px;

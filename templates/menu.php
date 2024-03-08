@@ -31,9 +31,15 @@
             </a>
         </li> -->
         <li>
-            <a href="{{link_url::57}}">
-                <div class="menu-list-icon"><img src="files/assets/layout/baeume.svg"></div>
-                <span>Aktiv in Saalfeld</span>
+            <a href="{{link_url::29}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/schild.svg"></div>
+                <span>Sehen und erleben</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{link_url::2}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/tours.svg"></div>
+                <span>Mobile Entdeckungstouren</span>
             </a>
         </li>
         <li>
@@ -43,9 +49,9 @@
             </a>
         </li>
         <li>
-            <a href="{{link_url::29}}">
-                <div class="menu-list-icon"><img src="files/assets/layout/schild.svg"></div>
-                <span>Sehen und erleben</span>
+            <a href="{{link_url::57}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/baeume.svg"></div>
+                <span>Aktiv in Saalfeld</span>
             </a>
         </li>
         <!-- <li>
@@ -54,12 +60,6 @@
                 <span>Wandern, Radfahren und mehr</span>
             </a>
         </li> -->
-        <li>
-            <a href="{{link_url::2}}">
-                <div class="menu-list-icon"><img src="files/assets/layout/tours.svg"></div>
-                <span>Mobile Entdeckungstouren</span>
-            </a>
-        </li>
         <!-- <li>
             <a href="">
                 <div class="menu-list-icon"><img src="files/assets/layout/favorites.svg"></div>
