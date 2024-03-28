@@ -54,6 +54,12 @@
                 <span>Aktiv in Saalfeld</span>
             </a>
         </li>
+        <li>
+            <a href="{{link_url::25}}">
+                <div class="menu-list-icon"><img src="files/assets/layout/info.svg"></div>
+                <span>Info / Kontakt / Anfahrt</span>
+            </a>
+        </li>
         <!-- <li>
             <a href="">
                 <div class="menu-list-icon"><img src="files/assets/layout/outdoor.svg"></div>

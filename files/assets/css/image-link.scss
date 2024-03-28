@@ -16,6 +16,19 @@
       background-color: $orange;
     }
   }
+  &.gruen {
+    background-color: $green;
+    .image-link-right {
+      background-color: $green;
+    }
+  }
+  &.dunkelrot {
+    background-color: $brown;
+    .image-link-right {
+      background-color: $brown;
+      color: white;
+    }
+  }
   .image-link-left {
     width: 35%;
     height: 160px;

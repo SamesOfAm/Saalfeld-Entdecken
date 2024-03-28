@@ -33,7 +33,7 @@ return array(
     'color' => array(
       'label' => array('Hintergrundfarbe', 'Welche Hintergrundfarbe soll der Text haben?'),
       'inputType' => 'select',
-      'options' => array('schwarz','orange')
+      'options' => array('schwarz','orange','gruen','dunkelrot')
     ),
   ),
 );
