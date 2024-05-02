@@ -2,18 +2,20 @@
     <?php if(!$this->toggleHeadline): ?><h3>Übersicht: Alle Stationen</h3><?php endif; ?>
     <ul>
         <?php foreach($this->stations as $station): ?>
-            <li>
-                <a href="<?= $station->link ?>" class="stations-list-link">
-                    <img src="{{file::<?= $station->image ?>}}">
-                    <div class="stations-list-link-right">
-                        <div class="stations-list-link-text">
-                            <h4><?= $station->name ?></h4>
-                            <p><?= $station->description ?></p>
+            <?php if(!$station->inactive): ?>
+                <li>
+                    <a href="<?= $station->link ?>" class="stations-list-link">
+                        <img src="{{file::<?= $station->image ?>}}">
+                        <div class="stations-list-link-right">
+                            <div class="stations-list-link-text">
+                                <h4><?= $station->name ?></h4>
+                                <p><?= $station->description ?></p>
+                            </div>
+                            <div class="stations-list-link-button"><?php if($station->buttontext): ?><?= $station->buttontext; ?><?php else: ?>Zur Station<?php endif; ?></div>
                         </div>
-                        <div class="stations-list-link-button"><?php if($station->buttontext): ?><?= $station->buttontext; ?><?php else: ?>Zur Station<?php endif; ?></div>
-                    </div>
-                </a>
-            </li>
+                    </a>
+                </li>
+        <?php endif; ?>
         <?php endforeach; ?>
     </ul>
 </div>

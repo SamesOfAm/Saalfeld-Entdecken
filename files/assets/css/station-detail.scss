@@ -249,6 +249,10 @@
   }
 }
 
+body.station-detail #main .inside > .mod_article .ce_image h2 {
+  text-align: center;
+}
+
 body.station-detail #main .inside > .mod_article > {
   .ce_text:not(:first-child) p:first-child {
     margin-top: 40px;

@@ -17,6 +17,10 @@ return array(
       'inputType' => 'list',
       'label' => array('Stationen eintragen', 'Rechts auf "Neues Element" klicken'),
       'fields' => array(
+        'inactive' => array(
+          'inputType' => 'checkbox',
+          'label' => array('Unsichtbar', 'Soll dieses Element unsichtbar sein?')
+        ),
         'name' => array(
           'inputType' => 'text',
           'label' => array('Name', 'Der Name der Station')

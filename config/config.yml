@@ -1,0 +1,11 @@
+contao:
+    url_suffix: ""
+huh_pwa:
+    vapid:
+        subject: "mailto:ft@klapproth-koch.de"
+        publicKey: "BDFf9_3FaUf2fT9I_COvxrd1G8iHaKdC47AchLYvCpoEEmuNIatWF0qgpABtTtUzjAtGXH2Jhrtt7goebBtr2RQ"
+        privateKey: "vIoPLn9FNTaXj6_nEP4DKJ5Xrf1RnAwfTtLUyhCFrU8"
+    push:
+        automatic_padding: 2847 # int (payload size in byte (min 0, max 4078)) or boolean (enable/disable)
+    manifest_path: '/pwa' # where the manifest files should be located within web folder
+    configfile_path: '/pwa' # where the configuration files should be located within web folder

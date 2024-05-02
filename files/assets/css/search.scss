@@ -4,11 +4,18 @@
   width: 90%;
   margin: 40px auto;
   form {
-    background: gray;
     box-sizing: border-box;
     padding: 18px;
     .formbody {
       position: relative;
+    }
+    .widget-text {
+      input {
+        border: 2px solid #cecece;
+        border-radius: 21px;
+        padding: 11px 14px;
+        font-size: 15px;
+      }
     }
     .widget-submit {
       position: absolute;
@@ -17,7 +24,8 @@
       input {
         font-size: 10px;
         width: 20px;
-        height: 16px;
+        height: 30px;
+        margin-right: 7px;
       }
     }
     input {

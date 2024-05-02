@@ -55,9 +55,9 @@
             </a>
         </li>
         <li>
-            <a href="{{link_url::25}}">
+            <a href="{{link_url::96}}">
                 <div class="menu-list-icon"><img src="files/assets/layout/info.svg"></div>
-                <span>Info / Kontakt / Anfahrt</span>
+                <span>Service und Information</span>
             </a>
         </li>
         <!-- <li>
