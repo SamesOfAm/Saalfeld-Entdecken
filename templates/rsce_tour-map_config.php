@@ -12,6 +12,10 @@ return array(
     'href' => array(
       'label' => array('MyMaps Link', 'Gesamte URL des Google MyMaps-Links'),
       'inputType' => 'url'
+    ),
+    'headline' => array(
+      'label' => array('Überschrift (wenn abweichend)', 'Wenn hier nichts eingetragen wird, erscheint "Weg zur nächsten Station"'),
+      'inputType' => 'text'
     )
   )
 );

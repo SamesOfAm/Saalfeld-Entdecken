@@ -1,5 +1,5 @@
 <div class="tour-map">
-    <h3>Weg zur nächsten Station</h3>
+    <h3><?php if($this->headline): ?><?= $this->headline ?><?php else: ?>Weg zur nächsten Station<?php endif; ?></h3>
   <div class="map">
       <iframe src="<?= $this->href ?>" width="100%" height="360"></iframe>
   </div>
